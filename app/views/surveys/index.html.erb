@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="surveys">
+    <% @surveys.each do |survey| %>
+      <li>
+        <%= link_to survey.name, survey_url(survey) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

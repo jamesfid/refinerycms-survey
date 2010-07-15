@@ -1,0 +1,16 @@
+en:
+  admin:
+    surveys:
+      index:
+        create_new: Create a new Survey
+        reorder: Reorder Surveys
+        reorder_done: Done Reordering Surveys
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no surveys yet. Click "Create a new Survey" to add your first survey.
+      singular_name:
+        view_live: View this survey live <br/><em>(opens in a new window)</em>
+        edit: Edit this survey
+        delete: Remove this survey forever
+  surveys:
+    show:
+      other: Other Surveys

@@ -1,0 +1,16 @@
+nl:
+  admin:
+    surveys:
+      index:
+        create_new: Maak een nieuwe Survey
+        reorder: Wijzig de volgorde van de Surveys
+        reorder_done: Klaar met het wijzingen van de volgorde van de Surveys
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen surveys. Druk op 'Maak een nieuwe Survey' om de eerste aan te maken.
+      singular_name:
+        view_live: Bekijk deze survey op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze survey
+        delete: Verwijder deze survey voor eeuwig
+  surveys:
+    show:
+      other: Andere Surveys

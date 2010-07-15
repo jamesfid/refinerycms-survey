@@ -1,0 +1,35 @@
+<% form_for [:admin, @survey] do |f| -%>
+  <%= f.error_messages %>
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :description -%>
+    <%= f.text_area :description, :rows => 20, :class => 'wymeditor widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :instructions -%>
+    <%= f.text_area :instructions, :rows => 20, :class => 'wymeditor widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :days_after_start_due -%>
+    <%= f.text_field :days_after_start_due -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :start_date -%>
+    <%= f.datetime_select :start_date -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :semester_id -%>
+    <%= f.text_field :semester_id -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions", :locals => {:f => f, :continue_editing => false} %>
+<% end -%>

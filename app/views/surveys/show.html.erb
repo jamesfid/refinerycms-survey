@@ -1,0 +1,50 @@
+<% content_for :body_content_title do %>
+  <%= @survey.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  
+  <div>
+    <h3>Name</h3>
+    <%= @survey.name %>
+  </div>
+  
+  <div>
+    <h3>Description</h3>
+    <%= @survey.description %>
+  </div>
+  
+  <div>
+    <h3>Instructions</h3>
+    <%= @survey.instructions %>
+  </div>
+  
+  <div>
+    <h3>Days After Start Due</h3>
+    <%= @survey.days_after_start_due %>
+  </div>
+  
+  <div>
+    <h3>Start Date</h3>
+    <%= @survey.start_date %>
+  </div>
+  
+  <div>
+    <h3>Semester</h3>
+    <%= @survey.semester_id %>
+  </div>
+  
+<% end %>
+
+<% content_for :body_content_right do %>
+  <h2><%= t('.other') %></h2>
+  <ul id="surveys">
+    <% @surveys.each do |survey| %>
+      <li>
+        <%= link_to survey.name, survey_url(survey) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
